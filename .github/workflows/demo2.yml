@@ -1,6 +1,15 @@
 name: Github Actions Demo
 on: [push]
 jobs:
+  explore-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Retrive secrets
+        env:
+          super_secret: ${{ secrets.SUPER_SECRET }}
+        run: |
+          echo "super secret is $super_secret"
+
   setup:
     runs-on: ubuntu-latest
     steps:

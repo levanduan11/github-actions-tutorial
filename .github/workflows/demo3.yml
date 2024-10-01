@@ -2,7 +2,7 @@ name: Demo3
 on:
   push:
     branches:
-      - demo3
+      - matrix
 
 jobs:
   label_issue:

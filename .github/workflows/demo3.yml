@@ -1,8 +1,8 @@
 name: Demo3 
 on:
-  issues:
-    types:
-      - opened
+  push:
+    branches:
+      - demo3
 
 jobs:
   label_issue:
